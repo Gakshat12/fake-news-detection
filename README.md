@@ -1,76 +1,56 @@
-# Fake News Detection with Deep Learning
+# Fake News Detection using Deep Learning (NLP)
 
-## Overview
-
-The proliferation of fake news presents a significant challenge in the digital age, necessitating robust solutions for its detection and mitigation. This repository presents a comprehensive fake news detection project using a dataset sourced from Kaggle. The dataset consists of two CSV files: `real.csv` and `fake.csv`, containing 21,417 and 23,481 articles respectively.
-
-## Dataset
-
-The dataset used in this project includes:
-- `real.csv`: Contains 21,417 real news articles.
-- `fake.csv`: Contains 23,481 fake news articles.
-
-## Models
-Explored the efficacy of various deep learning architectures to distinguish between real and fake news articles, including:
-- Long Short-Term Memory (LSTM)
-- Convolutional Neural Network (CNN)
-- Bidirectional LSTM
-- ResNet
-- COBRA
-- Gated Recurrent Unit (GRU)
-
-## Performance
-
-The experimental results demonstrate promising performance across the models, with accuracy metrics ranging from 0.76 to 0.97. Notably, the LSTM, Bidirectional LSTM, COBRA, and GRU models exhibit particularly high accuracy scores of 0.97 each, showcasing their effectiveness in discriminating between genuine and fabricated news articles.
-
-## Contributions
-
-Through this comparative analysis, the model provide insights into the strengths and limitations of different machine learning approaches for fake news detection. These findings contribute to the ongoing efforts in developing robust tools for combating misinformation and safeguarding the integrity of online information ecosystems.
-
-## Usage
-
-Clone the repository and follow the instructions to run the models and reproduce the results.
-
-```bash
-git clone https://github.com/yourusername/fake-news-detection.git
-cd fake-news-detection
-```
-
-## Requirements
-
-Ensure you have the following dependencies installed:
-
-- Python 3.x
-- TensorFlow
-- Keras
-- Pandas
-- NumPy
-- Scikit-learn
-
-## Installation
-
-Install the required packages using pip:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Running the Models
-
-Follow the provided notebooks and scripts to train and evaluate the models on the fake news detection dataset.
-
-## Results
-
-The results of the models will be displayed, showcasing accuracy and other relevant metrics.
-
-## Conclusion
-
-This repository offers a comprehensive approach to fake news detection using various deep learning models, highlighting the potential of these models in identifying misinformation with high accuracy.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+## 📌 Project Overview
+This project focuses on detecting **fake vs real news articles** using **Natural Language Processing (NLP)** and **Deep Learning** techniques.  
+The goal is to build a text classification system that can automatically identify whether a given news article is fake or real based on its content.
 
 ---
 
-Feel free to contribute to this project by submitting issues or pull requests. For any questions or feedback, please contact 17archanaas.@gmail.com .
+## 🧠 Problem Statement
+With the rapid spread of misinformation on digital platforms, identifying fake news has become a critical challenge.  
+This project aims to address this problem by training a deep learning model on labeled news data.
+
+---
+
+## 📊 Dataset
+- **Source:** Kaggle – Fake and Real News Dataset  
+- **Files Used:**
+  - `Fake.csv` – Fake news articles  
+  - `True.csv` – Real news articles  
+- **Features:** News title, text, subject, date  
+- **Target:** Fake / Real label  
+
+---
+
+## ⚙️ Approach
+1. **Data Cleaning & Preprocessing**
+   - Text normalization
+   - Tokenization
+   - Stopword removal
+2. **Exploratory Data Analysis (EDA)**
+   - Distribution of fake vs real news
+   - Text length analysis
+3. **Model Building**
+   - Deep Learning model using LSTM
+   - Word embeddings for text representation
+4. **Model Evaluation**
+   - Accuracy and loss monitoring
+5. **Deployment**
+   - Flask-based web application for prediction
+
+---
+
+## 🛠️ Technologies Used
+- **Programming:** Python  
+- **Libraries:** NumPy, Pandas, NLTK  
+- **Deep Learning:** TensorFlow / Keras (LSTM)  
+- **Visualization:** Matplotlib, Seaborn  
+- **Web App:** Flask  
+- **Tools:** Jupyter Notebook, Git, GitHub  
+
+---
+
+## 🚀 How to Run the Project
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Gakshat12/fake-news-detection.git
